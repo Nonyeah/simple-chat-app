@@ -35,6 +35,7 @@ export default function NameTabs() {
   return (
     <>
       <TypeMessage submitmessage={sendtext} />
+      
       <div className="outercontainer">
         <div className="tabcontainer">
           {chat.map((person) => (
@@ -106,7 +107,7 @@ export function TypeMessage({ submitmessage }) {
         }}
         type="button"
       >
-        SEND
+      send
       </button>
     </div>
   );

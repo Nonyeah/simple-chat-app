@@ -1,6 +1,13 @@
 body {
   box-sizing: border-box; 
  }
+
+ .outercontainer{
+  width: 85%;
+   display:flex;
+   margin: 0 auto;
+ }
+
  .tabcontainer{
    height: 300px;
    width: 20%;
@@ -9,20 +16,28 @@ body {
   flex-direction:column;
  }
 
- .message{
-  width: 80%;
-  margin: 20px auto;
+
+ .message {
+  width: 85%;
+  margin: 30px auto;
+ }
+ 
+ .message input{
+  display:inline-block;
+   width: 90%;
+   padding: 10px;
+   margin-right: 10px;
  }
 
- 
- .outercontainer{
-  width: 80%;
-   display:flex;
-   margin: 0 auto;
+ .message buttton {
+  display:inline-block;
+  width: 5%;
  }
- 
+
+
+
  .transcript{
-  width: 80%;
+  width: 85%;
    border: 1px solid #bbb5b5;
    margin-left: 10px;
    height: 300px;
@@ -39,11 +54,13 @@ body {
    justify-content: center;
    align-items:center;
    cursor:pointer;
-  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
  }
  
  .namebutton:hover{
-   background-color: #f2f2f2;
+   background-color: #073b66;
+   color: #fff;
  
  }
  
@@ -51,6 +68,7 @@ body {
  button{
    padding: 10px;
  cursor:pointer;
+ font: 12px arial;
  }
  
  button:hover{
@@ -58,17 +76,7 @@ body {
    font-weight:bold;
  }
 
- .messsage {
-  width: 80%;
-  margin: 30px auto;
- }
  
-  input{
-   width: 90%;
-   padding: 10px;
-   margin-right: 10px;
- }
-
 
 
  .colorweight{
@@ -76,3 +84,23 @@ body {
  }
 
  .reset{margin-top: 10px; margin-left:auto; margin-right:auto; display:block}
+
+ @media screen and (max-width: 600px) {
+
+  .message input {
+    width: 75%;
+    margin-right: 5px;
+  }
+  
+  .message button {
+    width: 15%;
+    font: 12px arial;
+    text-transform:capitalize;
+    text-align:center
+  }
+
+  .namebutton{
+    font: 12px arial;
+    padding: 12px 0;
+  }
+}
